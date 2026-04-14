@@ -47,7 +47,9 @@ public class builder {
 
 
 
+
         System.out.println(fullInfo);
+        scanner.close();
 
     }
 }
