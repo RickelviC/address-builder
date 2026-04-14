@@ -35,5 +35,19 @@ public class builder {
 
         System.out.print("Shipping Zip: ");
         String shippingZip = scanner.nextLine();
+
+        StringBuilder fullInfo = address.append(fullName).append("\n").append("\n")
+                .append("Billing Address:\n");
+
+        address.append(billingStreet).append("\n").append(billingCity).append(", ")
+                .append(billingState).append(" ").append(billingZip).append("\n").append("\n");
+
+        address.append("Shipping Address:\n").append(shippingStreet).append("\n").append(shippingCity).append(", ")
+                .append(shippingState).append(" ").append(shippingZip);
+
+
+
+        System.out.println(fullInfo);
+
     }
 }
